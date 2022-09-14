@@ -1,12 +1,12 @@
 # Trobber
 ### 팀 이름
-우원재
 
 ### 기획의도
-랄라
+늦은 밤까지 공부하고 작업하는 사람들의 집중력과 감성을 책임지는 서비스입니다.
+심야/새벽시간동안 공부한 만큼 색다른 보상을 부여하여 보다 알차게 시간을 활용하도록 돕습니다. 
 
 ### 프로젝트 주제
-밤낮없이 공부하는 사람들을 위해 색다른 학습 동기 부여 서비스입니다.
+밤샘작업러들은 위한 감성타이머 'Trobber' 입니다.
 
 ### 사용 예정 API
 - [Google TimeZone API](https://developers.google.com/maps/documentation/timezone/overview)
