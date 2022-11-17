@@ -1,13 +1,15 @@
 import React from 'react';
+import "./TimerSetting.css";
 
 const TimerSetting = () => {
-    return (
-        <div>
-            <>
-            <h1>타이머 세팅페이지 입니다! (희수 작업)</h1>
-            </>
-        </div>
-    );
+  return (
+    <div>
+      <div className="icons">
+        <img className="menubar" src={require("./pageimg/menubar.png")} />
+        <img className="graph" src={require("./pageimg/graph.png")} />
+      </div>
+    </div>
+  );
 };
 
 export default TimerSetting;
