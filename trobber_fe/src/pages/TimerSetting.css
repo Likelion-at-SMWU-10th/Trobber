@@ -5,3 +5,8 @@ img {
 .graph{
     float: right
 }
+
+.countries{
+    padding-top: 50px;
+    text-align: center;
+}

@@ -9,7 +9,7 @@ function Countries() {
       {/* 일본 */}
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="resizing"
           src="img/tokyo.png"
           alt="Tokyo"
         />
@@ -23,7 +23,7 @@ function Countries() {
       <Carousel.Item>
       
         <img
-          className="d-block w-100"
+          className="resizing"
           src="img/paris.png"
           alt="Paris"
         />
@@ -37,7 +37,7 @@ function Countries() {
       {/* 뉴욕 */}
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="resizing"
           src="img/newyork.png"
           alt="New York"
         />
@@ -54,7 +54,7 @@ function Countries() {
        <Carousel.Item>
       
       <img
-        className="d-block w-100"
+        className="resizing"
         src="img/beijing.png"
         alt="Beijing"
       />
@@ -68,7 +68,7 @@ function Countries() {
      <Carousel.Item>
       
       <img
-        className="d-block w-100"
+        className="resizing"
         src="img/london.png"
         alt="London"
       />
