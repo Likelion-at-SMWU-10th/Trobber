@@ -31,8 +31,8 @@ function Countries() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
+          src="img/newyork.png"
+          alt="New York"
         />
 
         <Carousel.Caption>
