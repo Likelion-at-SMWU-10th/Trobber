@@ -26,7 +26,14 @@ const Ticket = ({ country }) => {
                   09.01 22:29 ~ 09.02 03:11
                 </span>
               </div>
-              <div className={styles.divider}></div>
+              <div className={styles.split}>
+                <div className={styles.divider}></div>
+                <img
+                  className={styles.arrow}
+                  src="/images/arrow.png"
+                  alt="arrow"
+                />
+              </div>
               <div className={styles.endDate}>
                 <span className={styles.endDateInfo}>
                   09.01 22:29 ~ 09.02 03:11

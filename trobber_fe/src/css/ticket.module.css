@@ -97,11 +97,24 @@
   font-weight: 200;
 }
 
+.split {
+  display: flex;
+  flex-direction: row;
+}
+
 .divider {
   width: 100%;
   border-top: 0.05rem solid regularBlack;
   margin-top: 0.2rem;
 }
+
+.arrow {
+  position: absolute;
+  width: 0.5rem;
+  right: 5.7rem;
+  transform: rotateZ(180deg);
+}
+
 .task {
   width: 100%;
   font-size: 0.7rem;
