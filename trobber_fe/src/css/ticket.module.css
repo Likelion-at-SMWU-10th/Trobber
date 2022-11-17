@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
 .ticket {
@@ -96,25 +97,11 @@
   font-weight: 200;
 }
 
-.middleLine {
-  display: flex;
-  flex-direction: row;
-}
-
 .divider {
   width: 100%;
   border-top: 0.05rem solid regularBlack;
   margin-top: 0.2rem;
 }
-
-.arrow {
-  width: 0.6rem;
-  position: absolute;
-  right: 5.7rem;
-  top: 22.25rem;
-  transform: rotate(180deg);
-}
-
 .task {
   width: 100%;
   font-size: 0.7rem;

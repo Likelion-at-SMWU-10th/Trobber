@@ -65,11 +65,11 @@
 /* tickets */
 .tickets {
   width: 100%;
-  /* height: 100%;  ??*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .subtitle {

@@ -2,6 +2,12 @@ import React from "react";
 import styles from "../css/ticket.module.css";
 
 const Ticket = ({ country }) => {
+  const countries = {
+    PARIS: "FRA",
+    NEWYORK: "USA",
+    LONDON: "GBR",
+    CHINA: "CHN",
+  };
   return (
     <div className={styles.container}>
       <div className={styles.ticket}>
@@ -20,19 +26,12 @@ const Ticket = ({ country }) => {
                   09.01 22:29 ~ 09.02 03:11
                 </span>
               </div>
-              <div className={styles.middleLine}>
-                <div className={styles.divider}></div>
-                <img
-                  className={styles.arrow}
-                  src="/images/arrow.png"
-                  alt="arrow"
-                />
-              </div>
+              <div className={styles.divider}></div>
               <div className={styles.endDate}>
                 <span className={styles.endDateInfo}>
                   09.01 22:29 ~ 09.02 03:11
                 </span>
-                <span className={styles.endCountry}>FRA</span>
+                <span className={styles.endCountry}>{countries[country]}</span>
               </div>
             </div>
             <div className={styles.task}>네트워크 구조도 완성하기</div>

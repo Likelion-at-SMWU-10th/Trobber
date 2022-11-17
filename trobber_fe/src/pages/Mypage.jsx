@@ -32,9 +32,9 @@ const Mypage = ({ handleMouseDown, visibility }) => {
       <div className={styles.tickets}>
         <span className={styles.subtitle}>History (9)</span>
         <Ticket country={"PARIS"} />
-        {/* <Ticket country={"NEWYORK"} />
+        <Ticket country={"NEWYORK"} />
         <Ticket country={"LONDON"} />
-        <Ticket country={"CHINA"} /> */}
+        <Ticket country={"CHINA"} />
       </div>
       <button className={styles.more}>Show more history</button>
     </div>
