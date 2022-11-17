@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../css/mypage.module.css";
+import Ticket from "./Ticket";
 
 const Mypage = ({ handleMouseDown, visibility }) => {
   return (
@@ -9,14 +10,16 @@ const Mypage = ({ handleMouseDown, visibility }) => {
       }`}
     >
       <header className={styles.header}>
-        <img
-          className={styles.profile}
-          src="/images/profile.png"
-          alt="profile"
-        />
-        <div className={styles.info}>
-          <span className={styles.email}>fisflower1030@gmail.com</span>
-          <span className={styles.nickname}>TIGOWLER</span>
+        <div className={styles.profileArea}>
+          <img
+            className={styles.profile}
+            src="/images/profile.png"
+            alt="profile"
+          />
+          <div className={styles.info}>
+            <span className={styles.email}>fisflower1030@gmail.com</span>
+            <span className={styles.nickname}>TIGOWLER</span>
+          </div>
         </div>
         <img
           onClick={handleMouseDown}
@@ -28,6 +31,10 @@ const Mypage = ({ handleMouseDown, visibility }) => {
       </header>
       <div className={styles.tickets}>
         <span className={styles.subtitle}></span>
+        <Ticket country={"PARIS"} />
+        {/* <Ticket country={"NEWYORK"} />
+        <Ticket country={"LONDON"} />
+        <Ticket country={"CHINA"} /> */}
       </div>
       <button className={styles.more}>Show more history</button>
     </div>

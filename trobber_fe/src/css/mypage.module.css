@@ -1,15 +1,20 @@
+@value regularBlack, lightMint, regularMint, lightGray from '../common/colors.css';
+
 .container {
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: blueviolet;
+  background-color: lightGray;
   transition: 0.3s ease-in-out;
-}
 
-h1 {
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vw;
+  padding-left: 10vw;
 }
 
 .hide {
@@ -17,10 +22,39 @@ h1 {
 }
 
 .show {
-  transform: translate3d(0vw, 0, 0);
+  transform: translate3d(-5vw, 0, 0);
   overflow: hidden;
 }
 
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileArea {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.email {
+  font-size: 0.3rem;
+}
+
+.nickname {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
 .backBtn {
+  height: 1.3rem;
   cursor: pointer;
 }
