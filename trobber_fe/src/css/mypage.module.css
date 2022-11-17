@@ -20,3 +20,7 @@ h1 {
   transform: translate3d(0vw, 0, 0);
   overflow: hidden;
 }
+
+.backBtn {
+  cursor: pointer;
+}

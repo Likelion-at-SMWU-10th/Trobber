@@ -8,8 +8,28 @@ const Mypage = ({ handleMouseDown, visibility }) => {
         visibility ? styles.show : styles.hide
       }`}
     >
-      <h1>mypage</h1>
-      <button onClick={handleMouseDown}>hide!</button>
+      <header className={styles.header}>
+        <img
+          className={styles.profile}
+          src="/images/profile.png"
+          alt="profile"
+        />
+        <div className={styles.info}>
+          <span className={styles.email}>fisflower1030@gmail.com</span>
+          <span className={styles.nickname}>TIGOWLER</span>
+        </div>
+        <img
+          onClick={handleMouseDown}
+          className={styles.backBtn}
+          src="/images/arrow.png"
+          alt="arrow"
+        />
+        {/* <button onClick={handleMouseDown}>hide!</button> */}
+      </header>
+      <div className={styles.tickets}>
+        <span className={styles.subtitle}></span>
+      </div>
+      <button className={styles.more}>Show more history</button>
     </div>
   );
 };
