@@ -1,13 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function UncontrolledExample() {
+function Countries() {
   return (
     <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
+          src="img/japan.png"
+          alt="Japan"
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -44,4 +45,4 @@ function UncontrolledExample() {
   );
 }
 
-export default UncontrolledExample;
+export default Countries;
