@@ -30,9 +30,9 @@ const Mypage = ({ handleMouseDown, visibility }) => {
         {/* <button onClick={handleMouseDown}>hide!</button> */}
       </header>
       <div className={styles.tickets}>
-        <span className={styles.subtitle}></span>
-        <Ticket country={"PARIS"} />
-        {/* <Ticket country={"NEWYORK"} />
+        <span className={styles.subtitle}>History (9)</span>
+        {/* <Ticket country={"PARIS"} />
+        <Ticket country={"NEWYORK"} />
         <Ticket country={"LONDON"} />
         <Ticket country={"CHINA"} /> */}
       </div>

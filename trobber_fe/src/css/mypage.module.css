@@ -26,11 +26,14 @@
   overflow: hidden;
 }
 
+/* header */
+
 .header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1.7rem;
 }
 
 .profileArea {
@@ -57,4 +60,28 @@
 .backBtn {
   height: 1.3rem;
   cursor: pointer;
+}
+
+/* tickets */
+.tickets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.more {
+  width: 17rem;
+  cursor: pointer;
+  background-color: lightMint;
+  border: none;
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
 }
