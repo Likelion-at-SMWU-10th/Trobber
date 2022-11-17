@@ -10,3 +10,10 @@ img {
     padding-top: 50px;
     text-align: center;
 }
+
+.memo{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: gray;
+}

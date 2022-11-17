@@ -1,6 +1,7 @@
 import React from 'react';
 import "./TimerSetting.css";
 import Countries from "./components/Countries";
+import Memo from "./components/Memo";
 
 const TimerSetting = () => {
   return (
@@ -11,6 +12,9 @@ const TimerSetting = () => {
       </div>
       <div className="countries">
         <Countries/>
+      </div>
+      <div className="memo">
+        <Memo/>
       </div>
     </div>
   );
