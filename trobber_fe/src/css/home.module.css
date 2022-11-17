@@ -1,4 +1,4 @@
-@value regularBlack, lightMint from '../common/colors.css';
+@value regularBlack, lightMint, regularMint from '../common/colors.css';
 
 .container {
   width: 100vw;
@@ -9,9 +9,12 @@
   justify-content: center;
 }
 
-.logo {
-  width: 12em;
+.contents {
   margin-bottom: 3rem;
+}
+
+.logo {
+  width: 13em;
 }
 
 .buttons {
@@ -29,4 +32,10 @@
   padding: 0.7rem;
   margin-bottom: 0.5rem;
   border-radius: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: regularMint;
+  color: white;
 }
