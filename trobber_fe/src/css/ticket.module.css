@@ -1,0 +1,143 @@
+@value regularBlack, lightMint, regularMint, lightGray from '../common/colors.css';
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ticket {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pass {
+  width: 20%;
+}
+
+.ticketHeader,
+.passHeader {
+  background-color: regularBlack;
+  color: white;
+  text-align: center;
+  font-size: 0.3rem;
+  line-height: 0.9rem;
+}
+
+.passHeader {
+  border-radius: 0 0.5rem 0 0;
+}
+
+.ticketContents {
+  height: 100%;
+  background-color: white;
+  border: 0.05rem solid regularBlack;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.2rem;
+}
+
+.passContents {
+  background-color: white;
+  border: 0.05rem solid regularBlack;
+  border-left: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upperInfo {
+  margin-top: 0.7rem;
+}
+
+.startDate,
+.endDate {
+  display: flex;
+  flex-direction: row;
+}
+
+.startDate {
+  align-items: end;
+}
+
+.startCountry,
+.endCountry {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.startCountry {
+  margin-right: 0.2rem;
+}
+
+.endCountry {
+  margin-left: 0.2rem;
+}
+
+.startDateInfo,
+.endDateInfo {
+  font-size: 0.3rem;
+  font-weight: 200;
+}
+
+.middleLine {
+  display: flex;
+  flex-direction: row;
+}
+
+.divider {
+  width: 100%;
+  border-top: 0.05rem solid regularBlack;
+  margin-top: 0.2rem;
+}
+
+.arrow {
+  width: 0.6rem;
+  position: absolute;
+  right: 5.7rem;
+  top: 22.25rem;
+  transform: rotate(180deg);
+}
+
+.task {
+  width: 100%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: end;
+  margin-bottom: 0.3rem;
+}
+
+.duration {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 0.3rem;
+}
+
+.country {
+  width: 5rem;
+}
+
+.stamp {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  width: 3rem;
+}

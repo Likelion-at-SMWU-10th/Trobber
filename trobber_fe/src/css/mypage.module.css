@@ -64,12 +64,17 @@
 
 /* tickets */
 .tickets {
+  width: 100%;
+  /* height: 100%;  ??*/
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .subtitle {
+  width: 100%;
+  text-align: start;
   font-size: 0.9rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -84,4 +89,9 @@
   margin-bottom: 0.5rem;
   border-radius: 30px;
   transition: 0.2s ease-in-out;
+}
+
+.more:hover {
+  background-color: regularMint;
+  color: white;
 }

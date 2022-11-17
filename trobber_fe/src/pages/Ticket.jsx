@@ -16,12 +16,23 @@ const Ticket = ({ country }) => {
             <div className={styles.upperInfo}>
               <div className={styles.startDate}>
                 <span className={styles.startCountry}>KOR</span>
-                <span className={styles.startDateInfo}></span>
+                <span className={styles.startDateInfo}>
+                  09.01 22:29 ~ 09.02 03:11
+                </span>
               </div>
-              <div className={styles.divider}></div>
+              <div className={styles.middleLine}>
+                <div className={styles.divider}></div>
+                <img
+                  className={styles.arrow}
+                  src="/images/arrow.png"
+                  alt="arrow"
+                />
+              </div>
               <div className={styles.endDate}>
-                <span className={styles.endDateInfo}></span>
-                <span className={styles.endCountry}>KOR</span>
+                <span className={styles.endDateInfo}>
+                  09.01 22:29 ~ 09.02 03:11
+                </span>
+                <span className={styles.endCountry}>FRA</span>
               </div>
             </div>
             <div className={styles.task}>네트워크 구조도 완성하기</div>
@@ -29,15 +40,14 @@ const Ticket = ({ country }) => {
         </div>
       </div>
       <div className={styles.pass}>
-        <div className={styles.passHeader}>Boarding Pass</div>
+        <div className={styles.passHeader}>Board Pass</div>
         <div className={styles.passContents}>
           <span className={styles.duration}>05:25:48</span>
           <img className={styles.stamp} src="/images/stamp.png" alt="stamp" />
+          <span className={styles.text}>ROBBING</span>
           <span className={styles.text}>SUCCESS</span>
-          <span className={styles.text}>IN ROBBING</span>
         </div>
       </div>
-      <div className={styles.pass}></div>
     </div>
   );
 };
