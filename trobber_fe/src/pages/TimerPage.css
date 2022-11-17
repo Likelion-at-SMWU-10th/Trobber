@@ -1,0 +1,48 @@
+.root {
+  background-color: #97D4D6;
+}
+
+.menubar, .graph {
+  padding : 20px
+}
+
+.timeimg {
+  padding-left: 60px;
+  padding-top: 0px;
+}
+
+.timeimg2 {
+  padding-left: 29px;
+  padding-top: 0px;
+}
+
+.timeimg3 {
+  padding-left: 90px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.japan {
+  padding-top: 0px;
+  padding-left: 60px;
+  padding-top: -50px;
+  padding-bottom: 0px;
+}
+
+.graph{
+  float: right
+}
+
+.memo2{
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.startbutton2 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 19px;
+}
