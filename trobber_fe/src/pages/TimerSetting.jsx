@@ -16,6 +16,9 @@ const TimerSetting = () => {
       <div className="memo">
         <Memo/>
       </div>
+      <div className="startbutton">
+        <img className="startbutton" src={require("./pageimg/startbutton.png")} />
+      </div>
     </div>
   );
 };
