@@ -109,6 +109,7 @@
 }
 
 .arrow {
+  padding: 0;
   position: absolute;
   width: 0.5rem;
   right: 5.7rem;
