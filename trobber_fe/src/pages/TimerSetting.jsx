@@ -2,6 +2,7 @@ import React from 'react';
 import "./TimerSetting.css";
 import Countries from "./components/Countries";
 import Memo from "./components/Memo";
+import {Link} from 'react-router-dom';
 
 const TimerSetting = () => {
   return (
@@ -17,7 +18,7 @@ const TimerSetting = () => {
         <Memo/>
       </div>
       <div className="startbutton">
-        <img className="startbutton" src={require("./pageimg/startbutton.png")} />
+        <Link to = "/timer"><img className="startbutton" src={require("./pageimg/startbutton.png")} /></Link>
       </div>
     
     </div>
