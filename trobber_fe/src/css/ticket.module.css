@@ -134,10 +134,12 @@
 
 .country {
   width: 5rem;
+  padding: 0;
 }
 
 .stamp {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   width: 3rem;
+  padding: 0;
 }
