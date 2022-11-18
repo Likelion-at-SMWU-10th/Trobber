@@ -1,12 +1,10 @@
 import React from "react";
 import styles from "../css/home.module.css";
 import { useNavigate } from "react-router-dom";
-import Mypage from "./Mypage";
-import { useState } from "react";
 
 const Home = () => {
   const navigate = useNavigate();
-  const [visibility, setVisibility] = useState(false);
+  // const [visibility, setVisibility] = useState(false);
 
   const goToMain = () => {
     navigate("/setting");
@@ -15,17 +13,17 @@ const Home = () => {
     goToMain();
   };
 
-  const toggleMenu = () => {
-    setVisibility(!visibility);
-  };
-  const handleMouseDown = (event) => {
-    toggleMenu();
-  };
+  // const toggleMenu = () => {
+  //   setVisibility(!visibility);
+  // };
+  // const handleMouseDown = (event) => {
+  //   toggleMenu();
+  // };
   return (
     <>
-      <Mypage handleMouseDown={handleMouseDown} visibility={visibility} />
+      {/* <Mypage handleMouseDown={handleMouseDown} visibility={visibility} /> */}
       <div className={styles.container}>
-        <button onClick={handleMouseDown}>click!</button>
+        {/* <button onClick={handleMouseDown}>click!</button> */}
         <div className={styles.contents}>
           <img className={styles.logo} src="/images/logo.png" alt="logo" />
         </div>
