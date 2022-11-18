@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+/* edit */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
