@@ -27,7 +27,8 @@
 .button {
   width: 17rem;
   cursor: pointer;
-  background-color: lightMint;
+  background-color: regularMint;
+  color: regularWhite;
   border: none;
   padding: 0.7rem;
   margin-bottom: 0.5rem;
@@ -36,6 +37,6 @@
 }
 
 .button:hover {
-  background-color: regularMint;
-  color: regularWhite;
+  background-color: lightMint;
+  color: regularBlack;
 }
