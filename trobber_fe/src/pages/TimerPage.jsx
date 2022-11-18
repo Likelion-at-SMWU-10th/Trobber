@@ -1,13 +1,24 @@
 import React from 'react';
 import "./TimerPage.css";
 import Memo2 from "./components/Memo2";
+import Mypage from "./Mypage";
+import { useState } from "react";
 
 const TimerPage = () => {
+    const [visibility, setVisibility] = useState(false);
+
+    const toggleMenu = () => {
+      setVisibility(!visibility);
+    };
+    const handleMouseDown = (event) => {
+      toggleMenu();
+    };
     return (
         <>
+        <Mypage handleMouseDown={handleMouseDown} visibility={visibility} />
         <div className="root">
             <div className="icons">
-                <img className="menubar" src={require("./pageimg/Vector.png")} />
+                <img className="menubar" onClick={handleMouseDown} src={require("./pageimg/Vector.png")} />
                 <img className="graph" src={require("./pageimg/chartIcon.png")} />
             </div>
             <div className="time">

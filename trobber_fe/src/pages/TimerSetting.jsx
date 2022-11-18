@@ -18,7 +18,7 @@ const TimerSetting = () => {
 
   return (
     <>
-          <Mypage handleMouseDown={handleMouseDown} visibility={visibility} />
+    <Mypage handleMouseDown={handleMouseDown} visibility={visibility} />
     <div>
       <div className="icons">
         <img className="menubar" onClick={handleMouseDown} src={require("./pageimg/menubar.png")} />
