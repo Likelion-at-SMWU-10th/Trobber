@@ -1,4 +1,4 @@
-@value regularBlack, lightMint, regularMint, lightGray from '../common/colors.css';
+@value regularBlack, regularWhite, lightMint, regularMint, lightGray from '../common/colors.css';
 
 .container {
   width: 100%;
@@ -22,7 +22,7 @@
 .ticketHeader,
 .passHeader {
   background-color: regularBlack;
-  color: white;
+  color: regularWhite;
   text-align: center;
   font-size: 0.3rem;
   line-height: 0.9rem;
@@ -34,7 +34,7 @@
 
 .ticketContents {
   height: 100%;
-  background-color: white;
+  background-color: regularWhite;
   border: 0.05rem solid regularBlack;
   display: flex;
   flex-direction: row;
@@ -44,7 +44,7 @@
 }
 
 .passContents {
-  background-color: white;
+  background-color: regularWhite;
   border: 0.05rem solid regularBlack;
   border-left: none;
   display: flex;

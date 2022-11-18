@@ -1,4 +1,4 @@
-@value regularBlack, lightMint, regularMint from '../common/colors.css';
+@value regularBlack, regularWhite, lightMint, regularMint from '../common/colors.css';
 
 .container {
   width: 100vw;
@@ -37,5 +37,5 @@
 
 .button:hover {
   background-color: regularMint;
-  color: white;
+  color: regularWhite;
 }

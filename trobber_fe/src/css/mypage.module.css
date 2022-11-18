@@ -1,4 +1,4 @@
-@value regularBlack, lightMint, regularMint, lightGray from '../common/colors.css';
+@value regularBlack, regularWhite, lightMint, regularMint, lightGray from '../common/colors.css';
 
 .container {
   position: fixed;
@@ -93,5 +93,5 @@
 
 .more:hover {
   background-color: regularMint;
-  color: white;
+  color: regularWhite;
 }
