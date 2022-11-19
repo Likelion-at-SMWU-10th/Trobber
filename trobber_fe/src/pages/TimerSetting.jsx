@@ -47,9 +47,6 @@ const TimerSetting = () => {
           >
             <button className={styles.startButton}>Start Time Robbing</button>
           </Link>
-          {/* <Link to="/timer">
-            <button className={styles.startButton}>Start Time Robbing</button>
-          </Link> */}
         </div>
       </div>
     </>

@@ -2,12 +2,14 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../../css/countries.module.css";
 import "./Countries.css";
+import { useState } from "react";
+import { useEffect } from "react";
 
 function Countries() {
   return (
     <Carousel indicators={false} interval={null}>
       {/* 일본 */}
-      <Carousel.Item>
+      <Carousel.Item id="JAPAN">
         <div>
           <div className={styles.upperInfo}>
             <span className={styles.weather}>Raining</span>
@@ -25,7 +27,7 @@ function Countries() {
         </div>
       </Carousel.Item>
       {/* 파리 */}
-      <Carousel.Item>
+      <Carousel.Item id="PARIS">
         <div>
           <div className={styles.upperInfo}>
             <span className={styles.weather}>Cloudy</span>
@@ -43,7 +45,7 @@ function Countries() {
         </div>
       </Carousel.Item>
       {/* 뉴욕 */}
-      <Carousel.Item>
+      <Carousel.Item id="NEWYORK">
         <div>
           <div className={styles.upperInfo}>
             <span className={styles.weather}>Sunny</span>
@@ -61,7 +63,7 @@ function Countries() {
         </div>
       </Carousel.Item>
       {/* 베이징 */}
-      <Carousel.Item>
+      <Carousel.Item id="CHINA">
         <div>
           <div className={styles.upperInfo}>
             <span className={styles.weather}>Foggy</span>
@@ -79,7 +81,7 @@ function Countries() {
         </div>
       </Carousel.Item>
       {/* 런던 */}
-      <Carousel.Item>
+      <Carousel.Item id="LONDON">
         <div>
           <div className={styles.upperInfo}>
             <span className={styles.weather}>Raining</span>

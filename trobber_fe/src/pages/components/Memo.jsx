@@ -15,7 +15,7 @@ const Memo = ({ started, setMemo, todo }) => {
         className={`${styles.input} ${started && styles.disabled}`}
         disabled={started ? true : false}
         onChange={onChangeValue}
-        placeholder={started && todo}
+        placeholder={started ? todo : ""}
       ></input>
     </div>
   );

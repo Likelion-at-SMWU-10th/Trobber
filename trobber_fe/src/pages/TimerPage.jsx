@@ -53,7 +53,9 @@ const TimerPage = () => {
           <Memo started={true} todo={todo} />
         </div>
         <div className={styles.footer}>
-          <button className={styles.startButton}>Stop Time Robbing</button>
+          <Link to="/setting">
+            <button className={styles.startButton}>Stop Time Robbing</button>
+          </Link>
         </div>
       </div>
     </div>
