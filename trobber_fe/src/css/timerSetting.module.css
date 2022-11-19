@@ -23,7 +23,25 @@
   color: regularBlack;
 }
 
-.startbutton {
-  text-align: center;
-  padding-top: 35px;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.startButton {
+  width: 17rem;
+  cursor: pointer;
+  background-color: regularMint;
+  color: regularWhite;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
+  margin-top: 4.5em;
+}
+
+.startButton:hover {
+  background-color: lightMint;
+  color: regularBlack;
 }

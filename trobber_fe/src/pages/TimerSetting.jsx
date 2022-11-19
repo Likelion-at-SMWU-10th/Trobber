@@ -19,7 +19,7 @@ const TimerSetting = () => {
   return (
     <>
       <Mypage handleMouseDown={handleMouseDown} visibility={visibility} />
-      <div>
+      <div className={styles.container}>
         <div className={styles.header}>
           <img
             className={styles.menubar}
@@ -34,12 +34,9 @@ const TimerSetting = () => {
         <div className={styles.memo}>
           <Memo />
         </div>
-        <div className={styles.startbutton}>
+        <div className={styles.footer}>
           <Link to="/timer">
-            <img
-              className={styles.startbutton}
-              src={require("./pageimg/startbutton.png")}
-            />
+            <button className={styles.startButton}>Start Time Robbing</button>
           </Link>
         </div>
       </div>
