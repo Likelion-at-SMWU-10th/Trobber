@@ -32,7 +32,7 @@ const TimerSetting = () => {
           <Countries />
         </div>
         <div className={styles.memo}>
-          <Memo />
+          <Memo started={false} />
         </div>
         <div className={styles.footer}>
           <Link to="/timer">

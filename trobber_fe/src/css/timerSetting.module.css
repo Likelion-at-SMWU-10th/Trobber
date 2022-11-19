@@ -32,8 +32,8 @@
 .startButton {
   width: 17rem;
   cursor: pointer;
-  background-color: regularMint;
-  color: regularWhite;
+  background-color: lightMint;
+  color: regularBlack;
   border: none;
   padding: 0.7rem;
   border-radius: 30px;
@@ -42,6 +42,6 @@
 }
 
 .startButton:hover {
-  background-color: lightMint;
-  color: regularBlack;
+  background-color: regularMint;
+  color: regularWhite;
 }

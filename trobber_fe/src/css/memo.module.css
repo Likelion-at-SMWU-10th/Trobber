@@ -12,9 +12,18 @@
   margin-bottom: 0.5rem;
 }
 
+.text.disabled {
+  color: regularWhite;
+}
+
 .input {
   border: none;
   border-bottom: 0.05rem solid regularBlack;
+  background-color: transparent;
+}
+
+.input.disabled {
+  border-bottom: 0.05rem solid regularWhite;
 }
 
 input:focus {
