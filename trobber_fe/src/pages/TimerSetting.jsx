@@ -8,12 +8,16 @@ import { useState } from "react";
 
 const TimerSetting = () => {
   const [visibility, setVisibility] = useState(false);
+  const [memoValue, setMemoValue] = useState("");
 
   const toggleMenu = () => {
     setVisibility(!visibility);
   };
   const handleMouseDown = (event) => {
     toggleMenu();
+  };
+  const setMemo = (textValue) => {
+    setMemoValue(textValue);
   };
 
   return (
@@ -32,12 +36,20 @@ const TimerSetting = () => {
           <Countries />
         </div>
         <div className={styles.memo}>
-          <Memo started={false} />
+          <Memo started={false} setMemo={setMemo} />
         </div>
         <div className={styles.footer}>
-          <Link to="/timer">
+          <Link
+            to="/timer"
+            state={{
+              todo: memoValue,
+            }}
+          >
             <button className={styles.startButton}>Start Time Robbing</button>
           </Link>
+          {/* <Link to="/timer">
+            <button className={styles.startButton}>Start Time Robbing</button>
+          </Link> */}
         </div>
       </div>
     </>

@@ -3,9 +3,11 @@ import Mypage from "./Mypage";
 import { useState } from "react";
 import styles from "../css/timerPage.module.css";
 import Memo from "./components/Memo";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const TimerPage = () => {
+  const location = useLocation();
+  const todo = location?.state?.todo;
   const [visibility, setVisibility] = useState(false);
 
   const toggleMenu = () => {
@@ -48,12 +50,10 @@ const TimerPage = () => {
           />
         </div>
         <div className={styles.memo}>
-          <Memo started={true} />
+          <Memo started={true} todo={todo} />
         </div>
         <div className={styles.footer}>
-          <Link to="/timer">
-            <button className={styles.startButton}>Start Time Robbing</button>
-          </Link>
+          <button className={styles.startButton}>Stop Time Robbing</button>
         </div>
       </div>
     </div>
