@@ -1,7 +1,16 @@
 @value regularBlack, regularWhite, lightMint, regularMint from '../common/colors.css';
 
-.graph {
-  float: right;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em;
+}
+
+.menubar {
+  width: 1.5rem;
+  height: 1.2rem;
 }
 
 .countries {

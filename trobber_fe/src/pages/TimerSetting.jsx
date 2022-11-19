@@ -1,8 +1,8 @@
-import React from 'react';
-import "./TimerSetting.css";
+import React from "react";
+import styles from "../css/timerSetting.module.css";
 import Countries from "./components/Countries";
 import Memo from "./components/Memo";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Mypage from "./Mypage";
 import { useState } from "react";
 
@@ -18,23 +18,31 @@ const TimerSetting = () => {
 
   return (
     <>
-    <Mypage handleMouseDown={handleMouseDown} visibility={visibility} />
-    <div>
-      <div className="icons">
-        <img className="menubar" onClick={handleMouseDown} src={require("./pageimg/menubar.png")} />
-        <img className="graph" src={require("./pageimg/graph.png")} />
+      <Mypage handleMouseDown={handleMouseDown} visibility={visibility} />
+      <div>
+        <div className={styles.header}>
+          <img
+            className={styles.menubar}
+            onClick={handleMouseDown}
+            src={require("./pageimg/menubar.png")}
+          />
+          <img className={styles.graph} src={require("./pageimg/graph.png")} />
+        </div>
+        <div className={styles.countries}>
+          <Countries />
+        </div>
+        <div className={styles.memo}>
+          <Memo />
+        </div>
+        <div className={styles.startbutton}>
+          <Link to="/timer">
+            <img
+              className={styles.startbutton}
+              src={require("./pageimg/startbutton.png")}
+            />
+          </Link>
+        </div>
       </div>
-      <div className="countries">
-        <Countries/>
-      </div>
-      <div className="memo">
-        <Memo/>
-      </div>
-      <div className="startbutton">
-        <Link to = "/timer"><img className="startbutton" src={require("./pageimg/startbutton.png")} /></Link>
-      </div>
-    
-    </div>
     </>
   );
 };
