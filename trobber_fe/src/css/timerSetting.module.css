@@ -1,5 +1,9 @@
 @value regularBlack, regularWhite, lightMint, regularMint from '../common/colors.css';
 
+.container {
+  height: 100vh;
+}
+
 .header {
   display: flex;
   flex-direction: row;

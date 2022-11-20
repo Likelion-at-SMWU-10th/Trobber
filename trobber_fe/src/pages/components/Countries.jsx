@@ -2,12 +2,10 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../../css/countries.module.css";
 import "./Countries.css";
-import { useState } from "react";
-import { useEffect } from "react";
 
-function Countries() {
+function Countries({ isStarted }) {
   return (
-    <Carousel indicators={false} interval={null}>
+    <Carousel indicators={false} interval={null} controls={!isStarted}>
       {/* 일본 */}
       <Carousel.Item id="JAPAN">
         <div>
