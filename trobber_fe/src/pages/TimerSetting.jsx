@@ -40,9 +40,12 @@ const TimerSetting = () => {
           <img
             className={styles.menubar}
             onClick={handleMouseDown}
-            src={require("./pageimg/menubar.png")}
+            src={started ? "/images/whiteSlider.png" : "/images/slider.png"}
           />
-          <img className={styles.graph} src={require("./pageimg/graph.png")} />
+          <img
+            className={styles.graph}
+            src={started ? "/images/whiteChart.png" : "/images/chart.png"}
+          />
         </div>
         <div
           className={styles.countries}

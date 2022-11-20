@@ -121,72 +121,412 @@ function Countries({ isStarted }) {
       {/* 파리 */}
       <Carousel.Item id="PARIS">
         <div>
-          <div className={styles.upperInfo}>
-            <span className={styles.weather}>Cloudy</span>
-            <span className={styles.region}>Paris</span>
+          <div
+            className={styles.upperInfo}
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.upperTransform[1]
+                  : stylesProps.upperTransform[0]
+              }em)`,
+              color: `${
+                isStarted ? stylesProps.fontColor[1] : stylesProps.fontColor[0]
+              }`,
+            }}
+          >
+            <span
+              className={styles.weather}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.subFontSize[1]
+                    : stylesProps.subFontSize[0]
+                }`,
+                fontWeight: `${
+                  isStarted
+                    ? stylesProps.subFontWeight[1]
+                    : stylesProps.subFontWeight[0]
+                }`,
+              }}
+            >
+              Cloudy
+            </span>
+            <span
+              className={styles.region}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.mainFontSize[1]
+                    : stylesProps.mainFontSize[0]
+                }`,
+              }}
+            >
+              Paris
+            </span>
           </div>
           <img
             className={styles.countryImage}
             src="/images/PARIS.png"
             alt="Paris"
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.ImageTransform[1]
+                  : stylesProps.ImageTransform[0]
+              }em)`,
+            }}
           />
-          <div className={styles.bottomInfo}>
-            <span className={styles.date}>Nov. 20</span>
-            <span className={styles.time}>12:15</span>
+          <div
+            className={styles.bottomInfo}
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.bottomTransform[1]
+                  : stylesProps.bottomTransform[0]
+              }em)`,
+              color: `${
+                isStarted ? stylesProps.fontColor[1] : stylesProps.fontColor[0]
+              }`,
+            }}
+          >
+            <span
+              className={styles.date}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.subFontSize[1]
+                    : stylesProps.subFontSize[0]
+                }`,
+                fontWeight: `${
+                  isStarted
+                    ? stylesProps.subFontWeight[1]
+                    : stylesProps.subFontWeight[0]
+                }`,
+              }}
+            >
+              Nov. 20
+            </span>
+            <span
+              className={styles.time}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.mainFontSize[1]
+                    : stylesProps.mainFontSize[0]
+                }`,
+              }}
+            >
+              12:15
+            </span>
           </div>
         </div>
       </Carousel.Item>
       {/* 뉴욕 */}
       <Carousel.Item id="NEWYORK">
         <div>
-          <div className={styles.upperInfo}>
-            <span className={styles.weather}>Sunny</span>
-            <span className={styles.region}>New York</span>
+          <div
+            className={styles.upperInfo}
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.upperTransform[1]
+                  : stylesProps.upperTransform[0]
+              }em)`,
+              color: `${
+                isStarted ? stylesProps.fontColor[1] : stylesProps.fontColor[0]
+              }`,
+            }}
+          >
+            <span
+              className={styles.weather}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.subFontSize[1]
+                    : stylesProps.subFontSize[0]
+                }`,
+                fontWeight: `${
+                  isStarted
+                    ? stylesProps.subFontWeight[1]
+                    : stylesProps.subFontWeight[0]
+                }`,
+              }}
+            >
+              Sunny
+            </span>
+            <span
+              className={styles.region}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.mainFontSize[1]
+                    : stylesProps.mainFontSize[0]
+                }`,
+              }}
+            >
+              New York
+            </span>
           </div>
           <img
             className={styles.countryImage}
             src="/images/NEWYORK.png"
             alt="New York"
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.ImageTransform[1]
+                  : stylesProps.ImageTransform[0]
+              }em)`,
+            }}
           />
-          <div className={styles.bottomInfo}>
-            <span className={styles.date}>Oct. 30</span>
-            <span className={styles.time}>22:31</span>
+          <div
+            className={styles.bottomInfo}
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.bottomTransform[1]
+                  : stylesProps.bottomTransform[0]
+              }em)`,
+              color: `${
+                isStarted ? stylesProps.fontColor[1] : stylesProps.fontColor[0]
+              }`,
+            }}
+          >
+            <span
+              className={styles.date}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.subFontSize[1]
+                    : stylesProps.subFontSize[0]
+                }`,
+                fontWeight: `${
+                  isStarted
+                    ? stylesProps.subFontWeight[1]
+                    : stylesProps.subFontWeight[0]
+                }`,
+              }}
+            >
+              Oct. 30
+            </span>
+            <span
+              className={styles.time}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.mainFontSize[1]
+                    : stylesProps.mainFontSize[0]
+                }`,
+              }}
+            >
+              22:31
+            </span>
           </div>
         </div>
       </Carousel.Item>
       {/* 베이징 */}
       <Carousel.Item id="CHINA">
         <div>
-          <div className={styles.upperInfo}>
-            <span className={styles.weather}>Foggy</span>
-            <span className={styles.region}>Beijing</span>
+          <div
+            className={styles.upperInfo}
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.upperTransform[1]
+                  : stylesProps.upperTransform[0]
+              }em)`,
+              color: `${
+                isStarted ? stylesProps.fontColor[1] : stylesProps.fontColor[0]
+              }`,
+            }}
+          >
+            <span
+              className={styles.weather}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.subFontSize[1]
+                    : stylesProps.subFontSize[0]
+                }`,
+                fontWeight: `${
+                  isStarted
+                    ? stylesProps.subFontWeight[1]
+                    : stylesProps.subFontWeight[0]
+                }`,
+              }}
+            >
+              Foggy
+            </span>
+            <span
+              className={styles.region}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.mainFontSize[1]
+                    : stylesProps.mainFontSize[0]
+                }`,
+              }}
+            >
+              Beijing
+            </span>
           </div>
           <img
             className={styles.countryImage}
             src="/images/CHINA.png"
             alt="Beijing"
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.ImageTransform[1]
+                  : stylesProps.ImageTransform[0]
+              }em)`,
+            }}
           />
-          <div className={styles.bottomInfo}>
-            <span className={styles.date}>Dec. 13</span>
-            <span className={styles.time}>09:12</span>
+          <div
+            className={styles.bottomInfo}
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.bottomTransform[1]
+                  : stylesProps.bottomTransform[0]
+              }em)`,
+              color: `${
+                isStarted ? stylesProps.fontColor[1] : stylesProps.fontColor[0]
+              }`,
+            }}
+          >
+            <span
+              className={styles.date}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.subFontSize[1]
+                    : stylesProps.subFontSize[0]
+                }`,
+                fontWeight: `${
+                  isStarted
+                    ? stylesProps.subFontWeight[1]
+                    : stylesProps.subFontWeight[0]
+                }`,
+              }}
+            >
+              Dec. 13
+            </span>
+            <span
+              className={styles.time}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.mainFontSize[1]
+                    : stylesProps.mainFontSize[0]
+                }`,
+              }}
+            >
+              09:12
+            </span>
           </div>
         </div>
       </Carousel.Item>
       {/* 런던 */}
       <Carousel.Item id="LONDON">
         <div>
-          <div className={styles.upperInfo}>
-            <span className={styles.weather}>Raining</span>
-            <span className={styles.region}>London</span>
+          <div
+            className={styles.upperInfo}
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.upperTransform[1]
+                  : stylesProps.upperTransform[0]
+              }em)`,
+              color: `${
+                isStarted ? stylesProps.fontColor[1] : stylesProps.fontColor[0]
+              }`,
+            }}
+          >
+            <span
+              className={styles.weather}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.subFontSize[1]
+                    : stylesProps.subFontSize[0]
+                }`,
+                fontWeight: `${
+                  isStarted
+                    ? stylesProps.subFontWeight[1]
+                    : stylesProps.subFontWeight[0]
+                }`,
+              }}
+            >
+              Raining
+            </span>
+            <span
+              className={styles.region}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.mainFontSize[1]
+                    : stylesProps.mainFontSize[0]
+                }`,
+              }}
+            >
+              London
+            </span>
           </div>
           <img
             className={styles.countryImage}
             src="/images/LONDON.png"
             alt="London"
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.ImageTransform[1]
+                  : stylesProps.ImageTransform[0]
+              }em)`,
+            }}
           />
-          <div className={styles.bottomInfo}>
-            <span className={styles.date}>Apr. 01</span>
-            <span className={styles.time}>10:32</span>
+          <div
+            className={styles.bottomInfo}
+            style={{
+              transform: `translateY(${
+                isStarted
+                  ? stylesProps.bottomTransform[1]
+                  : stylesProps.bottomTransform[0]
+              }em)`,
+              color: `${
+                isStarted ? stylesProps.fontColor[1] : stylesProps.fontColor[0]
+              }`,
+            }}
+          >
+            <span
+              className={styles.date}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.subFontSize[1]
+                    : stylesProps.subFontSize[0]
+                }`,
+                fontWeight: `${
+                  isStarted
+                    ? stylesProps.subFontWeight[1]
+                    : stylesProps.subFontWeight[0]
+                }`,
+              }}
+            >
+              Apr. 01
+            </span>
+            <span
+              className={styles.time}
+              style={{
+                fontSize: `${
+                  isStarted
+                    ? stylesProps.mainFontSize[1]
+                    : stylesProps.mainFontSize[0]
+                }`,
+              }}
+            >
+              10:32
+            </span>
           </div>
         </div>
       </Carousel.Item>
