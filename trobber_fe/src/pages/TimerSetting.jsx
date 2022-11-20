@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../css/timerSetting.module.css";
 import Countries from "./components/Countries";
 import Memo from "./components/Memo";
-import { Link } from "react-router-dom";
 import Mypage from "./Mypage";
 import { useState } from "react";
 
@@ -23,7 +22,6 @@ const TimerSetting = () => {
       setStarted(false);
     } else {
       setStarted(true);
-      // change header icon color
     }
   };
 

@@ -59,7 +59,6 @@
 }
 
 .startButton {
-  position: absolute;
   width: 17rem;
   cursor: pointer;
   background-color: lightMint;
