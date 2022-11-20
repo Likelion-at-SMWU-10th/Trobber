@@ -28,6 +28,7 @@
 
 .input.disabled {
   border-bottom: 0.05rem solid regularWhite;
+  color: regularWhite;
 }
 
 input:focus {

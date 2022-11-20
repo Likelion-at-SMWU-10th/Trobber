@@ -9,13 +9,7 @@ import { useState } from "react";
 const TimerSetting = () => {
   // state
   const [visibility, setVisibility] = useState(false);
-  const [memoValue, setMemoValue] = useState("");
-  const [bgColor, setBgColor] = useState("#FFFFFF");
   const [started, setStarted] = useState(false);
-  const [btnColors, setBtnColors] = useState({
-    backgroundColor: "#CAE9EA",
-    textColor: "#000000",
-  });
 
   // func
   const toggleMenu = () => {
@@ -24,28 +18,13 @@ const TimerSetting = () => {
   const handleMouseDown = (event) => {
     toggleMenu();
   };
-  const setMemo = (textValue) => {
-    setMemoValue(textValue);
-  };
-  const startTimer = () => {
-    // background color
-    setBgColor("#97D4D6");
-
-    // inactive carousel
-    // disabled input and change memo color
-    setStarted(true);
-
-    // button color
-    setBtnColors({
-      backgroundColor: "#FFFFFF",
-      textColor: "#000000",
-    });
-
-    // move text
-
-    // show elapsedTime
-
-    // change header icon color
+  const toggleTimer = () => {
+    if (started) {
+      setStarted(false);
+    } else {
+      setStarted(true);
+      // change header icon color
+    }
   };
 
   return (
@@ -54,8 +33,7 @@ const TimerSetting = () => {
       <div
         className={styles.container}
         style={{
-          transition: "1s all ease-in-out",
-          backgroundColor: bgColor,
+          backgroundColor: `${started ? "#97D4D6" : "#FFFFFF"}`,
         }}
       >
         <div className={styles.header}>
@@ -66,35 +44,39 @@ const TimerSetting = () => {
           />
           <img className={styles.graph} src={require("./pageimg/graph.png")} />
         </div>
-        <div className={styles.countries}>
+        <div
+          className={styles.countries}
+          style={{
+            marginBottom: `${started ? 1.5 : 0}rem`,
+          }}
+        >
+          <div
+            className={styles.elapsedInfo}
+            style={{
+              opacity: `${started ? 1 : 0}`,
+              transform: `translateY(${started ? 5 : 10}em) translateX(6.5em)`,
+            }}
+          >
+            <span className={styles.elapsedText}>Elapsed Time</span>
+            <span className={styles.elapsedTime}>10:03:46</span>
+          </div>
           <Countries isStarted={started} />
         </div>
         <div className={styles.memo}>
-          <Memo isStarted={started} setMemo={setMemo} />
+          <Memo isStarted={started} />
         </div>
         <div className={styles.footer}>
           <button
             className={styles.startButton}
-            onClick={startTimer}
+            onClick={toggleTimer}
             style={{
-              transition: "1s all ease-in-out",
-              backgroundColor: btnColors.backgroundColor,
-              color: btnColors.textColor,
+              backgroundColor: `${started ? "#FFFFFF" : "#CAE9EA"}`,
+              color: `${started ? "#97D4D6" : "#000000"}`,
             }}
           >
-            Start Time Robbing
+            {started ? "Stop Time Robbing" : "Start Time Robbing"}
           </button>
         </div>
-        {/* <div className={styles.footer}>
-          <Link
-            to="/timer"
-            state={{
-              todo: memoValue,
-            }}
-          >
-            <button className={styles.startButton}>Start Time Robbing</button>
-          </Link>
-        </div> */}
       </div>
     </>
   );

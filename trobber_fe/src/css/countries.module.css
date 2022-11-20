@@ -1,5 +1,6 @@
 .countryImage {
   width: 15rem;
+  transition: 1s all ease-in-out;
 }
 
 .upperInfo {
@@ -10,6 +11,9 @@
   position: relative;
   top: 4.5em;
   left: 4.5em;
+
+  transition: 1s all ease-in-out;
+  z-index: 100;
 }
 
 .bottomInfo {
@@ -20,6 +24,18 @@
   position: relative;
   bottom: 4em;
   right: 4.5em;
+
+  transition: 1s all ease-in-out;
+}
+
+.weather,
+.region,
+.date,
+.time {
+  -webkit-transition: font-size 1s ease-in-out;
+  -moz-transition: font-size 1s ease-in-out;
+  -o-transition: font-size 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
 }
 
 .weather {

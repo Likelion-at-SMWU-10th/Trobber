@@ -16,7 +16,7 @@
   padding: 5vw;
   padding-left: 10vw;
 
-  z-index: 100;
+  z-index: 1000;
 }
 
 .hide {
