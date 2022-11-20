@@ -10,7 +10,6 @@ const Memo = ({ isStarted }) => {
       <input
         className={`${styles.input} ${isStarted && styles.disabled}`}
         disabled={isStarted}
-        // placeholder={started ? todo : ""}
       ></input>
     </div>
   );
