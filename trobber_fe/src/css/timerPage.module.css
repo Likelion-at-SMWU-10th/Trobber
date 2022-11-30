@@ -1,0 +1,112 @@
+@value regularBlack, regularWhite, lightMint, regularMint from '../common/colors.css';
+
+.container {
+  background-color: regularMint;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em;
+}
+
+.menubar {
+  width: 1.5rem;
+  height: 1.2rem;
+}
+
+.currentInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.countryInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.leftInfo,
+.rightInfo,
+.elapsedInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftInfo {
+  align-items: start;
+  margin-right: 3rem;
+}
+
+.rightInfo {
+  align-items: end;
+}
+
+.elapsedInfo {
+  align-items: center;
+}
+
+.weather,
+.date,
+.elapsedText {
+  position: relative;
+  color: regularWhite;
+  font-size: 0.8rem;
+  font-weight: 300;
+
+  top: 0.3rem;
+}
+
+.country,
+.time {
+  color: regularWhite;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.elapsedTime {
+  color: regularWhite;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.countryImage {
+  width: 14.5rem;
+}
+
+.memo {
+  padding-left: 2em;
+  padding-right: 2em;
+  color: regularBlack;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.startButton {
+  width: 17rem;
+  cursor: pointer;
+  background-color: regularWhite;
+  color: regularBlack;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
+  margin-top: 4.5em;
+}
+
+.startButton:hover {
+  background-color: regularMint;
+  border: 0.05rem solid regularWhite;
+  color: regularWhite;
+}

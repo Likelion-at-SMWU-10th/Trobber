@@ -1,0 +1,66 @@
+.countryImage {
+  width: 15rem;
+  transition: 1s all ease-in-out;
+}
+
+.upperInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  position: relative;
+  top: 4.5em;
+  left: 4.5em;
+
+  transition: 1s all ease-in-out;
+  z-index: 100;
+}
+
+.bottomInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  position: relative;
+  bottom: 4em;
+  right: 4.5em;
+
+  transition: 1s all ease-in-out;
+}
+
+.weather,
+.region,
+.date,
+.time {
+  -webkit-transition: font-size 1s ease-in-out;
+  -moz-transition: font-size 1s ease-in-out;
+  -o-transition: font-size 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
+}
+
+.weather {
+  font-size: 1rem;
+  position: relative;
+  top: -0.2em;
+}
+
+.region {
+  font-size: 2rem;
+  font-weight: 700;
+
+  position: relative;
+  top: -0.4em;
+}
+
+.date {
+  font-size: 1rem;
+  position: relative;
+  top: 0.7em;
+}
+
+.time {
+  font-size: 2rem;
+  font-weight: 700;
+
+  position: relative;
+}

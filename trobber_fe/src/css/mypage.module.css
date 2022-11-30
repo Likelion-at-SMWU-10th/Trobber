@@ -16,7 +16,7 @@
   padding: 5vw;
   padding-left: 10vw;
 
-  z-index: 100;
+  z-index: 1000;
 }
 
 .hide {
@@ -44,10 +44,6 @@
   align-items: center;
 }
 
-.profile {
-  padding: 0;
-}
-
 .info {
   display: flex;
   flex-direction: column;
@@ -64,7 +60,6 @@
 }
 
 .backBtn {
-  padding: 0;
   height: 1.2rem;
   cursor: pointer;
 }
@@ -88,7 +83,6 @@
 }
 
 .more {
-  padding: 0;
   width: 17rem;
   cursor: pointer;
   background-color: lightMint;

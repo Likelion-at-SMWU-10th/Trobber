@@ -1,0 +1,75 @@
+@value regularBlack, regularWhite, lightMint, regularMint from '../common/colors.css';
+
+.container {
+  height: 100vh;
+  transition: 1s all ease-in-out;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em;
+}
+
+.menubar {
+  width: 1.5rem;
+  height: 1.2rem;
+}
+
+.elapsedInfo {
+  color: regularWhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  transition: 1s all ease-in-out;
+}
+
+.elapsedText {
+  font-size: 1rem;
+  position: relative;
+}
+
+.elapsedTime {
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  position: relative;
+  top: -0.3em;
+}
+
+.countries {
+  text-align: center;
+}
+
+.memo {
+  padding-left: 2em;
+  padding-right: 2em;
+  color: regularBlack;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.startButton {
+  width: 17rem;
+  cursor: pointer;
+  background-color: lightMint;
+  color: regularBlack;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 30px;
+  margin-top: 4.5em;
+}
+
+.startButton:hover {
+  background-color: regularMint;
+  color: regularWhite;
+}

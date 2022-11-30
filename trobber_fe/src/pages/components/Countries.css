@@ -1,4 +1,27 @@
-.img-resizing{
-    width:35px;
-    height: 35px;
+.countryImage {
+  width: 15rem;
+}
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+  opacity: 1;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 20%;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: url("../../../public/images/carouselArrow.svg");
+  height: 2.5rem;
+  background-size: 150% 150%;
+}
+
+.carousel-control-next-icon {
+  transform: rotateZ(180deg);
 }
