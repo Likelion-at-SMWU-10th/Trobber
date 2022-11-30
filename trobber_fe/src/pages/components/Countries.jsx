@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../../css/countries.module.css";
 import "./Countries.css";
 
-function Countries({ isStarted }) {
+function Countries({ isStarted, weatherService, time }) {
   const stylesProps = {
     upperTransform: [0, -4], //not started, started
     bottomTransform: [0, -14.8],
@@ -46,7 +46,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              Raining
+              {weatherService.weather[0]}
             </span>
             <span
               className={styles.region}
@@ -101,7 +101,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              Dec. 20
+              {`${time["tokyo"][0]}. ${time["tokyo"][1]}`}
             </span>
             <span
               className={styles.time}
@@ -113,7 +113,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              23:52
+              {`${time["tokyo"][2]}:${time["tokyo"][3]}`}
             </span>
           </div>
         </div>
@@ -149,7 +149,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              Cloudy
+              {weatherService.weather[1]}
             </span>
             <span
               className={styles.region}
@@ -204,7 +204,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              Nov. 20
+              {`${time["paris"][0]}. ${time["paris"][1]}`}
             </span>
             <span
               className={styles.time}
@@ -216,7 +216,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              12:15
+              {`${time["paris"][2]}:${time["paris"][3]}`}
             </span>
           </div>
         </div>
@@ -252,7 +252,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              Sunny
+              {weatherService.weather[2]}
             </span>
             <span
               className={styles.region}
@@ -307,7 +307,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              Oct. 30
+              {`${time["newYork"][0]}. ${time["newYork"][1]}`}
             </span>
             <span
               className={styles.time}
@@ -319,7 +319,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              22:31
+              {`${time["newYork"][2]}:${time["newYork"][3]}`}
             </span>
           </div>
         </div>
@@ -355,7 +355,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              Foggy
+              {weatherService.weather[3]}
             </span>
             <span
               className={styles.region}
@@ -410,7 +410,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              Dec. 13
+              {`${time["beijing"][0]}. ${time["beijing"][1]}`}
             </span>
             <span
               className={styles.time}
@@ -422,7 +422,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              09:12
+              {`${time["beijing"][2]}:${time["beijing"][3]}`}
             </span>
           </div>
         </div>
@@ -458,7 +458,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              Raining
+              {weatherService.weather[4]}
             </span>
             <span
               className={styles.region}
@@ -513,7 +513,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              Apr. 01
+              {`${time["london"][0]}. ${time["london"][1]}`}
             </span>
             <span
               className={styles.time}
@@ -525,7 +525,7 @@ function Countries({ isStarted }) {
                 }`,
               }}
             >
-              10:32
+              {`${time["london"][2]}:${time["london"][3]}`}
             </span>
           </div>
         </div>
